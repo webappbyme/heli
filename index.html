@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heli Real Estate Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="Heli Logo" class="logo">
+            <h1>Heli Real Estate Agency</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#calculator">Mortgage Calculator</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Heli Real Estate Agency</h2>
+        <br>
+        <p>Your trusted partner in finding the perfect home.</p>
+        <br>
+        <br>
+        <img src="prop1.jpg" alt="Featured Property 1" class="property-image">
+        <img src="prop2.jpg" alt="Featured Property 2" class="property-image">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <br>
+        <p>Heli Real Estate Agency has been helping individuals and families find their dream homes for over a decade. We pride ourselves on providing exceptional service and personalized support to each of our clients.</p>
+        <br>
+        <p>Our team of experts understands the market trends and ensures that every customer is matched with a property that suits their needs and budget. Trust Heli Real Estate to make your property journey seamless and enjoyable.</p>
+        <br>
+        <br>
+        <img src="team.jpg" alt="Our Team" class="about-image">
+        <img src="office.jpg" alt="Our Office" class="about-image">
+    </section>
+
+    <!-- Mortgage Calculator Section -->
+    <section id="calculator">
+        <h2>Mortgage Calculator</h2>
+        <br>
+        <form id="mortgageForm">
+            <label for="amount">Loan Amount:</label>
+            <input type="number" id="amount" required>
+            <label for="interest">Interest Rate (%):</label>
+            <input type="number" id="interest" step="0.01" required>
+            <label for="years">Loan Term (years):</label>
+            <input type="number" id="years" required>
+            <button type="button" onclick="calculateMortgage()">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <br>
+        <form action="mailto:youremail@domain.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Heli Real Estate Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

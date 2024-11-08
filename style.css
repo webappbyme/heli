@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f3f2ed, #f7c94d);
+}
+h1, h2, p, label {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #fcdfa1, #e9aa4c);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+
+nav {
+    text-align: center;
+    margin: 1rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.property-image, .about-image {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px); /* Initial scroll effect */
+}
+
+.property-image:hover, .about-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll Animation: Fade In and Slide Up */
+.scroll-animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.mortgage-calculator {
+    max-width: 200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label, button {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, button, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #f0888d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f56169;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
